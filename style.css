@@ -8,13 +8,19 @@
  zoom: normal;
 }
 
+body
+{
+  width: auto;
+  margin: auto;
+}
+
 i{
   color: #0065FC;
 }
 
 #logo
 {
-  width: 100px;
+  width: 100%;
   height: 50px;
   padding-top:  1%;
   padding-left: 20px;
@@ -574,4 +580,4 @@ footer div
  margin-top: 50px;
 }
 
-  
+
