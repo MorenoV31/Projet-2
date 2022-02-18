@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/1bc826e551.js" crossorigin="anonymous"></script>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet"  href="icone.css" />
         <title>Bookie</title>
@@ -16,23 +17,23 @@
                  <img src="images/logo/Booki.png" alt="logo" id="logo"/>
                  </a>
             </p>
-            <div>
-                <p> <a href="#Hebergement" class="HA">Hébergement</a></p>
+            <nav>
+                <p><a href="#Hebergement" class="HA">Hébergement</a></p>
                 <p><a href="#Activité" class="HA">Activités</a></p>
-            </div>
+            </nav>
         </header>
-        <nav>
-            <p id=titre>Trouvez votre hébergement pour des vacances de rêve</p>
-            <p id = sous-titre>En plein centre ville ou en pleine nature</p>
+        <div id="HautCorp" class="C">
+            <h1 id=titre>Trouvez votre hébergement pour des vacances de rêve</h1> <!--Changer la balise en h1-->
+            <h2 id = sous-titre>En plein centre ville ou en pleine nature</h2>
             <div id=barre>
                 <i class="fas fa-map-marker-alt fa-sm" id="Loc"></i>
-                <form method="post" action="traitement.php">
+                <form method="post" action="traitement.php" id="ZoneR">
                     <input type="text" name="recherche" value="Marseille,France" id="recherche"/>
                     <input type="submit" value="Rechercher" id="bouton"/>
                 </form>
             </div>
             <div id="filtres">
-                <p style="font-size: 20px;">Filtres</p>
+                <p style="font-size: 20px;">Filtres</p> <!--Sortir le CSS-->
                 <div class="case">
                     <i class="fas fa-money-bill-wave IcFiltre"></i>
                     <p>Économique</p>
@@ -56,8 +57,8 @@
                 Plus de 500 logement sont disponible dans cette ville.
             </p>
            
-        </nav>
-        <div id="Corps">
+        </div>
+        <div id="Corps" class="C">
             <section id="Hebergement">
                 <h1 id="TH">Hébergement à Marseille</h1>
                 <div class="Cards">
@@ -324,21 +325,27 @@
             </section>
         </div>
         <footer>
-            <div id="AP">
-                <h1>A propos</h1>
-                <p>Fonctionnement du site</p>
-                <p>Conditions général de vente</p>
-                <p>Données et confendtialité</p>
+            <div>
+                <p class="TitreF">A propos</p>
+                <ul class="ListeF">
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions général de vente</li>
+                    <li>Données et confendtialité</li>
+                </ul>
             </div>
-            <div id="NH">
-                <h1>Nos hébergement</h1>
-                <p>Charte qualité</p>
-                <p>Soumettre votre hôtel</p>
+            <div>
+                <p class="TitreF">Nos hébergement</p>
+                <ul class="ListeF">
+                    <li>Charte qualité</li>
+                    <li>Soumettre votre hôtel</li>
+                </ul>
             </div>
-            <div id="Assist">
-                <h1>Assistance</h1>
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
+            <div>
+                <p class="TitreF">Assistance</p>
+                <ul class="ListeF">
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
             </div>
         </footer>
     </body>

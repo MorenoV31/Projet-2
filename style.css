@@ -8,22 +8,78 @@
  zoom: normal;
 }
 
+/* Partie sur les icones*/
+
+#Loc
+{
+  background-color: #F2F2F2 ;
+  width: 10%;
+  color: black;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.IcFiltre
+{
+    background-color: rgba(0, 101, 252, 0.2);
+    color: #0065FC;
+    border-radius: 40px;
+    height: 48px;
+    width: 48px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info
+{
+    border: solid #F2F2F2 ;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-width: 1px;
+}
+
+#Stat
+{
+    margin-right: 80px;
+    color: black;
+}
+
 body
 {
   width: auto;
-  margin: auto;
+  margin: 0px;
+}
+
+.C
+{
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 i{
   color: #0065FC;
 }
 
+/* Fin parti sur les icones*/
+
 #logo
 {
-  width: 100%;
-  height: 50px;
+  width: 60%;
+  height: 70px;
   padding-top:  1%;
   padding-left: 20px;
+  margin-left: 75px;
 }
 
 header
@@ -34,28 +90,23 @@ header
   align-items: center;
 }
 
-header > div
+nav
 {
   display: flex;
   flex-direction: row;
   margin-right: 50px;
 }
 
-header > div > p
+header > nav > p
 {
   margin: 30px;
-}
-
-header,nav,#Corps
-{
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
 #sous-titre
 {
   font-size: medium;
   margin-top: 8px;
+  font-weight: normal;
 }
 
 #titre
@@ -67,30 +118,22 @@ header,nav,#Corps
 
 /* Partie sur la barre de recherche*/
 
+#ZoneR
+{
+  width: 90%;
+}
+
 #barre
 {
   display: flex;
   flex-direction: row;
   border: solid #F2F2F2;
   border-width: 1px;
-  width: 303.5px;
+  width: 18%;
   height: 40px;
   border-radius: 10px;
   align-items: center;
   text-align: center;
-}
-
-#LP
-{
-  width: 30.5px;
-  height: 30px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-color: #F2F2F2;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #bouton
@@ -102,7 +145,7 @@ header,nav,#Corps
   font-weight: bold;
   border: transparent;
   color: white;
-  width: 94px;
+  width: 30%;
 }
 
 #recherche
@@ -113,13 +156,14 @@ header,nav,#Corps
   border:transparent;
   text-align: left;
   text-indent: 10px;
+  width: 67%;
 }
 
 .HA
 {
   text-decoration: none;
   color: black;
-  padding-top: 40px;
+  padding-top: 42px;
 }
 
 .HA:hover
@@ -407,7 +451,7 @@ header,nav,#Corps
 }
 
 #Activité .cardL
-{ width: 22%;
+{ width: 23%;
   height: 100%;
   border-radius: 20px;
   margin-bottom: 30px;
@@ -474,7 +518,7 @@ header,nav,#Corps
 {
   display: flex;
   flex-direction: column;
-  width: 22%;
+  width: 23%;
   height: 100%;
   margin-left: 0px;
   margin-right: 20px;
@@ -566,18 +610,57 @@ footer
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-left: 50px;
 }
 
-footer h1
+.TitreF
 {
   font-size: medium;
   margin-bottom: 30px;
+  font-weight: bold;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.ListeF
+{
+  margin: 0px;
+  padding: 0px;
 }
 
 footer div
 {
- margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
+ul
+{
+  list-style: none;
+}
 
+li
+{
+  margin-top: 10px;
+}
+
+footer div
+{
+  margin-left: 50px;
+}
+
+@media screen and (max-width : 768px) 
+{
+
+
+
+
+  
+  body
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
